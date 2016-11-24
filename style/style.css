@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family:Calibri, Arial !important;
+	font-size:16px;
+	line-height:1.3;
+	margin:0;
+	padding:0;
+	background:#faf5f3;
+}
+div { transition:0.2s; }
+
+#skyline {
+	min-height: calc(100vh - 94px);
+	background:url(../images/skyline-bg.jpg) center bottom no-repeat #faf5f3;
+	background-size:contain;	
+}
+
+#logos { margin-top:20px; }
+
+#logos div {
+    display:inline-block;
+	margin-right:75px;
+	vertical-align:bottom;
+}
+
+#darkMatter { margin-right:0 !important; line-height:2; }
+
+#dates { margin-top:85px; }
+
+#iso {
+	display:inline-block;
+    padding:10px 30px 10px 0;
+	border-right:1px solid #222222;	
+	vertical-align:middle;
+}
+
+#eventDetails {
+    display:inline-block;	
+	vertical-align:middle;
+	padding: 10px 0 10px 30px;
+}
+
+.reg-btn { margin:40px 0; }
+
+.reg-btn a {
+    background: #eb7e23;
+    border: 1px solid #eb7e23;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+	transition:0.2s;
+}
+
+.reg-btn a:hover {
+    background: #f28c37;
+	text-decoration:none;
+	color:#ffffff;
+}
+
+#footer { 
+    background:#000000; 
+	color:#ffffff;
+	font-size:1.2em;
+	text-align:center;
+}
+
+.footerDetail {
+	display:inline-block;
+	margin:15px 20px 30px;
+}
+
+.footerDetail div {
+	display:inline-block;
+	margin-right:5px;
+	vertical-align:middle;
+}
+
+#disc {
+	text-align:left;
+	font-size:1.3em;
+	margin:30px 10px 250px;
+}
+
+#discButtons .reg-btn {
+	display:inline-block;
+	margin:25px 0;
+}
+
+#discButtons .reg-btn a {
+	font-size:1em;
+}
+
+#disc p { margin:0 0 20px; }
+
+@media (max-width:1024px) {
+	#skyline { height:auto; }
+	#eventDetails { padding:0; margin-bottom:150px; }
+	#iso { padding:10px 0 20px; border-bottom:1px solid #222222; border-right:none;	 }
+}
+
+@media (max-width:500px) {
+	#skyline { background-size:auto; }
+    #logos div { margin-right:0; vertical-align:bottom; }
+	#logos img { height:45px !important; width: auto !important; margin-bottom:20px; }
+	#disclaimer { margin-top:20px; }
+	#disclaimer br { display:none; }	
+	#venue { font-size:1.7em !important; }
+	#eventDetails { margin-bottom:320px; }
+	#eventDetails2 { margin-bottom:20px; }
+	.footerDetail { margin:5px; }
+	#footerDetails { margin-bottom:20px; }
+	#footer br { display:block !important; }
+	#discButtons { margin:15px 0; }
+	#discButtons .reg-btn { margin: 2px 0; }
+	#discButtons .reg-btn a { display:block; margin:2px 0; }
+	.form-container { padding:0; font-family:Calibri !important; }
+}
+
+@media (max-height:768px) {
+    #dates { margin-bottom:250px; }
+	#disc { margin: 30px 10px 0; }
+}
